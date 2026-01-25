@@ -164,7 +164,7 @@ int main(int argc,char **argv)
 
 	guVector starAxis1 = {0,1,0};
 	guVector starAxis2 = {0,0,1};
-	while(1) {
+	while(SYS_MainLoop()) {
 
 		GX_SetTevOp(GX_TEVSTAGE0,GX_MODULATE);
 		GX_SetTevOrder(GX_TEVSTAGE0, GX_TEXCOORD0, GX_TEXMAP0, GX_COLOR0A0);

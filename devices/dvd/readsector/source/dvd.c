@@ -101,7 +101,7 @@ int main () {
 
 	if (ret <= 0) {
 		printf ("Error during read sector 0\n");
-		while (1);
+		while(SYS_MainLoop());
 	}
  
 	printf ("Read %d bytes\n", ret);
@@ -129,7 +129,7 @@ int main () {
 		}
 	}
  
-	while(1) {
+	while(SYS_MainLoop()) {
 
 		VIDEO_WaitVSync();
 		PAD_ScanPads();

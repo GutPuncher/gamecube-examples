@@ -191,7 +191,7 @@ int main( int argc, char **argv ){
 	// get the room ready to render
 	SetupWorld();
  
-	while(1) {
+	while(SYS_MainLoop()) {
 
 		PAD_ScanPads();
 
